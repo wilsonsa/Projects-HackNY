@@ -307,7 +307,7 @@ def leftMouseReleased(event):         #within the Board Dimensions
             canvas.data.piecesPlacedInATurn.append(tileInfo)
             #print canvas.data.piecesPlacedInATurn
             
-            for x in range (len(canvas.data.piecesPlacedInATurn)):
+            #for x in range (len(canvas.data.piecesPlacedInATurn)):
                 #print "row:",canvas.data.piecesPlacedInATurn[x].row
                 #print "col:",canvas.data.piecesPlacedInATurn[x].col
             canvas.data.tilesOnBoard[tileInfo.row][tileInfo.col]=tileInfo
@@ -345,7 +345,7 @@ def computeScore(row, col, tile):
             canvas.data.score2+=2*tile.value
         else:
             canvas.data.score2+=tile.value
-    else:
+    #else:
         #print "oh noes"
 
 
