@@ -1,0 +1,9 @@
+I started drawing out the center star but I got bored and decided to
+steal the code from somewhere:
+
+http://www.ehow.com/how_6105758_draw-star-using-python-language.html 
+
+
+The official rules of scrabble. Used some of this in the instruction page.
+
+http://www.scrabblepages.com/scrabble/rules/
