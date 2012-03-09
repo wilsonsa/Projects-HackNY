@@ -166,7 +166,7 @@ def leftMousePressed(event):
         boardDimensionY2=730
         
         if (x1<event.x<x2 and y1<event.y<y2): #if click in Grab Box
-            print "asdkjhaskdjhakjshdjkas PRESSING GRAB BOX"
+            #print "asdkjhaskdjhakjshdjkas PRESSING GRAB BOX"
             makePiece()
 
         elif (x3<event.x<x4 and y3<event.y<y4): #if click in Scramble Box
@@ -183,7 +183,7 @@ def leftMousePressed(event):
                         drawPieces(canvas.data.piecesOnRack[row],c)
                         c += 1
                     canvas.data.piecesPlacedInATurn=[] 
-                print "GameStatus:",canvas.data.gameStatus
+                #print "GameStatus:",canvas.data.gameStatus
             elif (canvas.data.gameStatus=="NormalMove1"):
                 if wordPlacementIsValid()==True:
                     canvas.data.gameStatus="NormalMove2"
@@ -195,7 +195,7 @@ def leftMousePressed(event):
                         c += 1
                     canvas.data.piecesPlacedInATurn=[]
                     
-                print "GameStatus:",canvas.data.gameStatus
+                #print "GameStatus:",canvas.data.gameStatus
                 #changeTiles()
                 #takes player2 tiles and places over player1 Tiles
                 #wordPlacementIsValid()
@@ -209,7 +209,7 @@ def leftMousePressed(event):
                         drawPieces(canvas.data.piecesOnRack[row],c)
                         c += 1
                     canvas.data.piecesPlacedInATurn=[]
-                print "GameStatus:",canvas.data.gameStatus
+                #print "GameStatus:",canvas.data.gameStatus
                 #changeTiles()
                 #takes player1 tiles and palces over player2 tiles
                 #wordPlacementIsValid()
@@ -305,14 +305,14 @@ def leftMouseReleased(event):         #within the Board Dimensions
             moveBackToRack(tileInfo)
         else: #puts tile into a previously empty spot
             canvas.data.piecesPlacedInATurn.append(tileInfo)
-            print canvas.data.piecesPlacedInATurn
+            #print canvas.data.piecesPlacedInATurn
             
             for x in range (len(canvas.data.piecesPlacedInATurn)):
-                print "row:",canvas.data.piecesPlacedInATurn[x].row
-                print "col:",canvas.data.piecesPlacedInATurn[x].col
+                #print "row:",canvas.data.piecesPlacedInATurn[x].row
+                #print "col:",canvas.data.piecesPlacedInATurn[x].col
             canvas.data.tilesOnBoard[tileInfo.row][tileInfo.col]=tileInfo
             
-        print canvas.data.tilesOnBoard
+        #print canvas.data.tilesOnBoard
         
         drawPieceToBoard()
         computeScore(tileInfo.row, tileInfo.col, tileInfo)
@@ -346,7 +346,7 @@ def computeScore(row, col, tile):
         else:
             canvas.data.score2+=tile.value
     else:
-        print "oh noes"
+        #print "oh noes"
 
 
 
