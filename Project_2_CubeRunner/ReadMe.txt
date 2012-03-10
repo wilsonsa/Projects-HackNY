@@ -7,4 +7,5 @@ a work in progress.
 
 Also, sometimes, the program does not end after crashing into
 a red sphere. However, this can be resolved hitting "r" for
-restart.
+restart. Aside from this, most everything else should be, 
+more or less, intuitive. 

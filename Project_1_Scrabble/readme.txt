@@ -1,4 +1,13 @@
 Readme File:
+To run the game, run the file "runThisOne.py"
+
+Firstly, you should know this project is still a work in progress. There
+are still bugs in this program that become quite obvious once you start
+playing the game. However, this is a bare-bones version in the sense that, 
+if played like it's supposed to (ie grabbing when you're supposed to, and
+adding on to the larger puzzle), it should work to completion (ie the 
+program does check the validity of the word, allows you to drag tiles onto
+the board, etc).
 
 What my project is:
 	My project is an electronic copy of the board game Scrabble. This
